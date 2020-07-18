@@ -17,7 +17,7 @@ class EmailAddressParser
     # binding.pry
     temp_array = email_addresses.split(/\,|\s/).uniq
     binding.pry
-    temp_array.delete_if {|x| x == " "}
+    temp_array.delete_if {|x| x == ""}
       # binding.pry
     #remove duplicate emails and " "
   end
