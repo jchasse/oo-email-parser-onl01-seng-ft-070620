@@ -14,8 +14,9 @@ class EmailAddressParser
   end
 
   def parse
-    binding.pry
-    email_addresses.split(/\,|\s/).uniq
+    # binding.pry
+    temp_array = email_addresses.split(/\,|\s/).uniq
+      binding.pry
     #remove duplicate emails and " "
   end
 
