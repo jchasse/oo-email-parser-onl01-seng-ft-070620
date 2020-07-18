@@ -14,7 +14,10 @@ class EmailAddressParser
   end
 
   def parse
-    email_addresses.split()
+    binding.pry
+    email_addresses.split(/\,|\' '/)
+
+# self.split(/\.|\!|\?/)
 
   end
 
